@@ -25,27 +25,29 @@
         <form action="" method="post">
         <fieldset name="contact-info">
             <legend>Let's do this!</legend>
+            <div class="inner_form" id="inner_form">
             <div class="inner-left">
                 <label for="first_name">First Name</label>
-                <input type="text" name="first_name" id="first_name">
+                <input type="text" name="first_name" id="first_name" required>
                 <label for="email">email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <label for="password">password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" minlength="5" maxlength="10" name="password" id="password" required>
+                <span></span>
             </div>
             <div class="inner-right">
                 <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" id="last_name">
+                <input type="text" name="last_name" id="last_name" required>
                 <label for="phone">phone number</label>
-                <input type="phone" name="phone" id="phone">
-                <label for="password_confirm">password</label>
-                <input type="password" name="password_confirm" id="password_confirm">
+                <input type="phone" name="phone" id="phone" required>
+                <label for="password_confirm">confirm password</label>
+                <input type="password" name="password_confirm" id="password_confirm" required>
             </div>
-
+          </div>
         </fieldset>
        </div>
        <div class="bottom">
-        <button type="submit">Create Account</button>
+        <button type="submit" class="submit">Create Account</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, voluptas.</p>
        </form>
        </div>
